@@ -408,6 +408,66 @@ nav ul li a:hover {
   color: #ccc;
   font-size: 1rem;
 }
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding: 4rem 2rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 10, 30, 0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modal-content video,
+.modal-content img {
+  width: 100%;
+  max-height: 500px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.prev,
+.next {
+  background-color: #9F6496;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #D391B0;
+}
+
 
 /* Contact Section */
 .contact {

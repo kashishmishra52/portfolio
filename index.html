@@ -150,20 +150,33 @@
   </div>
 </section>
 
-  <section class="hobbies" id="hobbies">
+  <section id="hobbies" class="hobbies">
   <h3>My Hobbies</h3>
   <div class="hobby-grid">
-    <div class="hobby-card">
-      <img src="your-image1.jpg" alt="Hobby 1">
-      <p>Painting and exploring new color palettes</p>
+
+    <div class="hobby-card" onclick="openGallery('art')">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=60" alt="Art Gallery">
+      <p>Art Gallery</p>
     </div>
-    <div class="hobby-card">
-      <video src="your-video.mp4" controls></video>
-      <p>Dancing and expressing through movement</p>
+
+    <div class="hobby-card" onclick="openGallery('dance')">
+      <img src="https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=800&q=60" alt="Dance">
+      <p>Dance Performances</p>
     </div>
-    <!-- Add more hobby cards as needed -->
+
+  </div>
+
+  <!-- Modal Popup -->
+  <div id="hobbyModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <button class="prev" onclick="prevItem()">&#10094;</button>
+      <div id="hobbyViewer"></div>
+      <button class="next" onclick="nextItem()">&#10095;</button>
+    </div>
   </div>
 </section>
+
 
 
   <section id="contact" class="contact">
